@@ -33,6 +33,10 @@ function Button(props) {
         &:hover {
             background-color: gainsboro;
         }
+
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
     `
     return <button css={styles}>{props.children}</button>
 }
